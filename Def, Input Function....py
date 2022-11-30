@@ -1,0 +1,63 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[7]:
+
+
+Name = input('Enter your name - ')
+
+Mobile_No = int(input('Enter your Mobile No. - '))
+
+print ('You Entered = ', Mobile_No)
+
+if Name.isalpha():
+    print ('You Entered = ', Name)
+else:
+    print ('Enter only alpha charactors')
+
+
+# In[4]:
+
+
+def used_car_price(car_year, car_brand, kmeters):
+    if car_year == 2020:
+        if 15000 < kmeters <= 25000:
+            if car_brand == 'Honda Amaze':
+                print('Rs 690,000 - Rs 750,000')
+            elif car_brand == 'Hyundai Creta':
+                print('₹ 945,000 - ₹ 10,80,000')
+            else:
+                print('No Stock right now, please visit after few days')
+        else:
+            print('No Stock')
+            
+            
+    elif car_year == 2021:
+        if 10000 < kmeters <= 15000:
+            if car_brand == 'Honda Amaze':
+                print('Rs 790,000 - Rs 850,000')
+            elif car_brand == 'Hyundai Creta':
+                print('₹ 10,45,000 - ₹ 11,80,000')
+            else:
+                print ('No stock right now, please visit after few days')
+        else:
+            print ('No stock right now, please visit after few days')
+    else:
+        print ("Sorry, We don't keep car's older than 2020")
+
+
+# In[8]:
+
+
+car_brd = input('Enter Car Brand - ')
+km_driven = int(input('Enter Kilometeres - '))
+manu_yr = int(input('Enter manufacturing Year - '))
+
+used_car_price(manu_yr, car_brd, km_driven)
+
+
+# In[ ]:
+
+
+
+
